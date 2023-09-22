@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: #ffffff;
+    text-align: center;
+    animation-name: changeColor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changeColor {
+    0%{background-color: darkslateblue;}
+    25%{background-color: darksalmon;}
+    50%{background-color: darkslategray;}
+    75%{background-color: greenyellow;}
+    100%{background-color: darkred;}
+}
+
+.love-container{
+    width: 80%;
+    border: 2px solid #000;
+    margin: auto;
+    margin-top: 20px;
+    border-color: #000000;
+    border-radius: 1rem;
+    border-bottom-color: brown;
+    border-right-color: blue;
+    border-left-color: cornflowerblue;
+    border-top-color: white;
+    padding: 50px;
+    color: #fff;
+    height: 100%;
+    background-color: #ff4136;
+}
+
+h1{
+    color: #fff;
+    font-size: 5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    width: auto;
+}
+
+.calculator{
+    display: flex;
+    margin: 100px auto 20px auto;
+    text-align: center;
+    flex-flow: row;
+    justify-content: center;
+}
+
+label{
+    font-weight: 600;
+}
+
+input{
+    width: 300px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid #fff;
+    border-radius: 5px;
+    outline: none;
+    padding: 7px;
+    font-size: 20px;
+    color: #fff;
+    justify-content: space-between;
+    margin: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    box-shadow: 0 10px 23px 10px #00000020;
+}
+
+input:focus{
+    width: 450px;
+    background-color: #fff;
+    color: #ff4136;
+    transition: 0.3s;
+    font-weight: 700;
+}
+
+input:valid{
+    background-color: #fff;
+    color: #ff4136;
+    transition: 0.3s;
+    font-weight: 700;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 19px;
+    text-align: center;
+}
+
+img{
+    margin-top: -20px;
+    width: 180px;
+    height: 180px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+button {
+    width: 30%;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    color: #ff4136;
+    padding: 15px 30px;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+    font-weight: 600;
+    box-shadow: 0 10px 23px 10px #00000020;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.result{
+    width: 50%;
+    margin: 100px auto;
+}
+
+.result h2{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 9px;
+}
+
+.divider{
+    width: 200px;
+    height: 2px;
+    background-color: #fff;
+    text-align: center;
+    margin: 10px auto;
+}
+
+#loveinfo{
+    line-height: 1.5;
+}
+
+#reload{
+    border: 1px solid #000;
+    border-radius: 14px;
+    padding: 12px 17px;
+    margin-top: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 50%;
+    display: none;
+    margin-left: 100px;
+}
+
+/* responsive codes */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+body {
+    font-size: 16px;
+}
+
+.love-container {
+    padding: 50px 10px;
+}
+
+    h1 {
+    font-size: 1.5rem;
+}
+
+.calculator{
+    margin: 50px auto 20px auto;
+    display: grid;
+}
+
+.input {
+    margin: 20px 0;
+    width: 90%;
+    height: 30px;
+}
+
+.input:focus {
+    width: 100%;
+}
+
+button {
+    font-size: 13px;
+    padding: 7px 5%;
+    border-radius: 12px;
+}
+
+.result {
+    width: 90%;
+    margin: 100px auto;
+}
+
+.divider {
+    width: 30%;
+}
+
+#score {
+    font-size: 2rem;
+}
+}
+
+  /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+.love-container {
+    padding: 50px 10px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.calculator {
+    margin: 50px auto 20px auto;
+    display: grid;
+}
+
+.input {
+    margin: 20px 0;
+    height: 30px;
+}
+
+button {
+    font-size: 16px;
+    padding: 15px 5%;
+    border-radius: 2px;
+}
+
+.result {
+    width: 90%;
+    margin: 100px auto;
+}
+
+.resultOne {
+    width: 30%;
+}
+
+#score {
+    font-size: 2rem;
+    }
+}
+
+  /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+.love-container {
+    padding: 50px 10px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.calculator {
+    display: flex;
+}
+
+.input {
+    width: 300px;
+    margin: 20px;
+}
+
+.input:focus {
+    width: 350px;
+}
+
+button {
+    padding: 15px 5%;
+    border-radius: 1rem;
+}
+
+.result {
+    width: 90%;
+    margin: 100px auto;
+}
+
+.resultOne {
+    width: 30%;
+}
+
+#score {
+    font-size: 2rem;
+}
+}

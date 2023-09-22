@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeke Love Calculator</title>
+    <link rel="shortcut icon" href="/zeke logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/calculator.css">
+</head>
+<body>
+    <div class="love-container">
+        <div class="love-calculator">
+            <h1>❤️Love ❤️ Calculator ❤️</h1>
+            <h4>Love calculator will determine the level of romantic and non-romantic love between you and your partner, based on gender</h4>
+        </div>  
+        
+
+        <div class="calculator">
+            <div>
+                <img src="/male-icon-19.png" alt="Male">
+                <label for="yourName">Your Name:</label>
+                <input type="text" id="yourName" placeholder="Enter your name" spellcheck="false" maxlength="20">
+            </div>
+
+            <div>
+                <img src="/female-girl-wife-woman-icon-15.png" alt="Female">
+                <label for="theirName">Lover Name:</label>
+                <input type="text" id="theirName" placeholder="Enter your name" spellcheck="false" maxlength="20">
+            </div>
+        </div>
+
+        <button type="submit">💖Calculate💖</button>
+
+        <div class="result">
+            <h2>Result</h2>
+            <div class="divider"></div>
+            <p id="yourlovescoreis"></p>
+            <h2 id="score"></h2>
+            <p id="loveinfo"></p>
+            <button id="reload" onclick="window.location.reload()">⁐ Re Calculate</button>
+        </div>
+
+        
+
+        <div onclick="playMusic()"></div>
+    </div>
+    
+    <script src="/calculator.js"></script>
+</body>
+</html>
